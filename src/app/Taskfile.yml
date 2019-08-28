@@ -1,0 +1,22 @@
+version: '2'
+
+vars:
+  OWNER: eiskye
+  SERVICE: art-api
+
+tasks:
+  # -
+  # Docker
+  # -
+
+  build:
+    cmds:
+      - docker build -t {{.OWNER}}/{{.SERVICE}}:1.0 .
+
+  run:
+    cmds:
+      - docker run {{.OWNER}}/{{.SERVICE}}:1.0
+
+  push:
+    cmds:
+      - docker push {{.OWNER}}/{{.SERVICE}}:1.0

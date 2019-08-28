@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+thumbs.db
+
+# IDE files
+.vscode/
+
+# Go build folders
+/pkg
+/bin
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
